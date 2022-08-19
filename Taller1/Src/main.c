@@ -8,13 +8,17 @@
 
 #include <stdint.h>
 
-#if !defined(__SOFT_FP__) && defined(__ARM_FP)
-  #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
-#endif
+unsigned int years = 0;
+unsigned short dias = 0;
+
 
 int main(void)
 {
+	years = 10;
+	dias = 365;
+
     /* Loop forever */
+
 	while(1)
 	{
 
